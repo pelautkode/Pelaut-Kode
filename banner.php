@@ -16,14 +16,9 @@ Hi! i'm Pelaut Kode   /(O)\  //  \\
                             _\\()//_    
 Trust me, i'm Love You.    / //  \\ \      
                             | \__/ |
-echo "\n$blue
-Author  : Cvar1984
-Code    : PHP
-Github  : http://github.com/Cvar1984
-Team    : BlackHole Security
-Version : 0.1 ( Beta )
-Date    : 24-03-2018\n";
-echo "$red=========================== Cvar1984 ))=====(@)>".$green."\n";
+sleep(3);
+echo "[+] LIST SERVER [+]\n\n";
+echo "1. SG-1\n2. SG-2\n3. SG-3\n\n";
 sleep(2);
 echo "[-] pilih server : ";
 $ser = trim(fgets(STDIN));
