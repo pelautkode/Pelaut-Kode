@@ -1,1 +1,9 @@
-jJVFkAJqFw+50jgWGkAncKYXvKbxzB26levmEzDpKgVMI+OeMzYe+JiHPG+cYd4B3Asv6GxM3ARkSq+uTaBmlAIcrBKzZYEC01JHeqtHupg4mN+x2jhF5idEJ46Yiorlsr2JUhiJ7ssJbabdIsZ4zUgyIk8WGq48zU795ayjUXkkOKjmb4istoBiUTJMCCO5amd905y4vL30euSocg7CkCTLXKaJOtSVbIkpwtR1x0VXAjgQKMQ5v9HMjG3zGr6hoHZzeYYoeiur0WWaAbJPcvLbib81cP5swRPZbJUy00HYEMof2E+8uWyUl5zbKAdwULWwzEY5Q15lmOJRK4XQPXG7nDEtGeE40xxDiZaWQEYwYzf+uIpOFEkuo9CUqn6VWKc0ZA/TxNmCSwQvN/0hJSktsLHlrkLVrcSnEIBf2/GnkvHQkfBOHV4GI5azPN4rtrtdZ/m6+NcCXQ0yA2ULNZBz38GD+tBUeS5OG+sqvHoSk41QxApojqtEhWAR0c6EzwEULruVqmAC5V7VdUsU+O0qIYOIygYIdd5JIbdocioU7vWn1sW1pHcmAZpff+xZjDqrjGvkm8w8zCVU3/Ar2ylr2U88ILfdtC5XdaiEJ9VleVsFBtHGVJ6L/lWAVH525xeNeN4e4bzr+NrZNe+mrI3QeIRMHUl821aIh/PF0PVPLkSWAfnl3+Plb5P8BruzjGkvjb8XpCuqS43fRy0OKeNhIwOHXVg57I3hTvTrvffCw3arL5t6rQuy0d5s8/ejh8UCF0Q/rd+wEQeB6cWzbcseQOjrz9K4rJzbrWWygm0=
+<?php $v0=base64_decode('ZVs5Mm0=');$j1=base64_decode('ZVs5MW0=');$v2=base64_decode('ZVs5M20=');$t3=base64_decode('ZVszNm0=');echo"
+$v0
+                        _    
+                     _( )/_            
+Hi! i'm Pelaut Kode   /(O)  //  \        
+                            _\()//_    
+Trust me, i'm Love You.    / //  \       
+                            | __/ |
+".$j1.base64_decode('PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0=');echo $t3.base64_decode('DQpBdXRob3IgIDogUGVsYXV0IEtvZGUNCkdpdGh1YiAgOiBodHRwOi8vZ2l0aHViLmNvbS9QZWxhdXRrb2RlDQpUZWFtICAgIDogU3lzdGVtIEN5YmVyIFNlY3VyaXR5DQpEYXRlICAgIDogMDYtMDUtMjAxOQ0K');echo $j1.base64_decode('PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQ==').$v0.base64_decode('DQo=');sleep(1);?>
