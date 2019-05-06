@@ -21,15 +21,14 @@ Hi! i'm Pelaut Kode   /(O)\  //  \\
                             _\\()//_    
 Trust me, i'm Love You.    / //  \\ \      
                             | \__/ |\n".$red.
-"Shortlink Generator";
+"======================================";
 echo $blue."
-Author  : Cvar1984
-Code    : PHP
-Github  : http://github.com/Cvar1984
-Team    : BlackHole Security
-Version : 0.1 ( Alpha )
-Date    : 24-03-2018\n";
-echo $red."=========================== Cvar1984 ))=====(@)>".$green."\n";
+[+]Tools Pelaut Kode[+]
+Author  : Pelaut Kode
+Github  : http://github.com/Pelautkode
+Team    : System Cyber Security
+Date    : 06-05-2019\n";
+echo $red."=================================".$green."\n";
 if(isset($argv[1])) {
 	$url=$argv[1];
 } else {
