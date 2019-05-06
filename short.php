@@ -23,12 +23,11 @@ Trust me, i'm Love You.    / //  \\ \
                             | \__/ |\n".$red.
 "======================================";
 echo $blue."
-[+]Tools Pelaut Kode[+]
 Author  : Pelaut Kode
 Github  : http://github.com/Pelautkode
 Team    : System Cyber Security
 Date    : 06-05-2019\n";
-echo $red."=================================".$green."\n";
+echo $red."=====================================".$green."\n";
 if(isset($argv[1])) {
 	$url=$argv[1];
 } else {
