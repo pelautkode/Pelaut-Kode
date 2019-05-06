@@ -1,5 +1,4 @@
 <?php
-system($clear);
 $green  = "\e[92m";
 $red    = "\e[91m";
 $yellow = "\e[93m";
@@ -19,10 +18,10 @@ Team    : System Cyber Security
 Date    : 06-05-2019\n";
 echo $red."=====================================".$green."\n";
 sleep(1);
-echo "masukan license awal : ";
+echo "Masukan license awal: ";
 $lic = trim(fgets(STDIN));
 sleep(1);
-echo "masukan jumlah generate : ";
+echo "Masukan jumlah generate : ";
 $jum = trim(fgets(STDIN));
 for ($i=1; $i <= $jum; $i++) {
 $h = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
