@@ -18,7 +18,5 @@ Team    : System Cyber Security
 Date    : 06-05-2019\n";
 echo $red."=====================================".$green."\n";
 sleep(1);
-}
 	}
-
 ?>
