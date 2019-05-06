@@ -1,9 +1,6 @@
+#!/data/data/com.termux/files/usr/bin/php
 <?php
 sleep(1);
-function input($echo) {
-	echo $echo." --> ";
-}
-menu:
 system("clear");
 $green  = "\e[92m";
 $red    = "\e[91m";
