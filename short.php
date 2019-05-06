@@ -28,32 +28,23 @@ Github  : http://github.com/Pelautkode
 Team    : System Cyber Security
 Date    : 06-05-2019\n";
 echo $red."=====================================".$green."\n";
-if(isset($argv[1])) {
-	$url=$argv[1];
-} else {
-	echo "Usage : php short.php www.example.com\n";
-	die();
+sleep(1);
+echo "masukan license awal : ";
+$lic = trim(fgets(STDIN));
+sleep(1);
+echo "masukan jumlah generate : ";
+$jum = trim(fgets(STDIN));
+for ($i=1; $i <= $jum; $i++) {
+$h = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+$a = "1234567890";
+$r = $h.$a;
+$go = str_shuffle($r);
+$rand = substr($go, rand(0,20), 6);
+$file = "list_key.txt";
+//menggabungkan license awal dengan hasil generate
+$res = $lic."-".$rand."\n";
+touch($file);
+$o = fopen($file, 'a');
+fwrite($o, $res);
+fclose($o);
 }
-$param="https://www.googleapis.com/urlshortener/v1/url?key=AIzaSyDKvTCsXX3Vipbqyhj3a0JH1D3JYMuB5VM";
-$post = array(
-"longUrl"=> $url
-);
-$jsondata = json_encode($post);
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL,$param);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0); curl_setopt($ch, CURLOPT_HEADER, 0);
-curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-type:application/json"));
-curl_setopt($ch, CURLOPT_POST, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS, $jsondata);
-$response=curl_exec($ch);
-curl_close($ch);
-$json=json_decode($response);
-//print_r($json);
-if(isset($json->error)) {
-	echo $json->error->message;
-	} else {
-		echo "Link   : ".$json->longUrl."\n";
-		echo "Result : ".$json->id."\n";
-		}
-echo $red."=========================== Cvar1984 ))=====(@)>".$green."\n";
