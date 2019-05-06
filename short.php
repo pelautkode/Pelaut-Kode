@@ -1,15 +1,5 @@
-#!/data/data/com.termux/files/usr/bin/php
 <?php
-if(strtolower(substr(PHP_OS, 0, 3)) == "win") {
-$bersih="cls";
-} else {
-$bersih="clear";
-}
-function input($echo) {
-	echo $echo." --> ";
-}
-menu:
-system($bersih);
+system($clear);
 $green  = "\e[92m";
 $red    = "\e[91m";
 $yellow = "\e[93m";
