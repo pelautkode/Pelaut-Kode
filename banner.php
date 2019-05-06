@@ -20,8 +20,8 @@ echo "\n$green
 Hi! i'm Pelaut Kode   /(O)\  //  \\        
                             _\\()//_    
 Trust me, i'm Love You.    / //  \\ \      
-                            | \__/ |\n"
-
+                            | \__/ |\n".$red.
+[Shortlink Generator];
 echo $blue."
 Author  : Pelaut Kode
 Github  : http://github.com/Pelautkode
